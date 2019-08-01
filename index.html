@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matt Wood: Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <nav role="navBar">
+        <ul class="navigation">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <header role="heroSection">
+            <h1>Greetings!</h1>
+            <h3>My name is Matt and I love to bring order to chaos.</h3>
+        </header>
+        <section role="bio" id="bio">
+            <h2>Bio</h2>
+            <p>Bio text will go here</p>
+        </section>
+        <section role="projects" id="projects">
+            <h2>Projects</h2>
+            <h3>Quiz App</h3>
+            <div class="projectScreencap">
+                <p>There's gonna be an image of the quiz app here later, I promise.</p>
+            </div>
+            <p>This will contain information about various projects I've built</p>
+        </section>
+        <section role="contact" id="contact">
+            <h2>Contact</h2>
+            <p>This section will contain links to my online profiles</p>
+            <form> 
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name">
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="text" placeholder="Email Address">
+                    <label for="message">Message:</label>
+                    <textarea class="contactMessage" placeholder="Write me a message!"></textarea>
+                    <input type="submit" class="submitButton" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

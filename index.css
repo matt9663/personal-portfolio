@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+nav {
+    padding: 2%;
+    background-color: grey;
+}
+nav ul {
+    text-align: right;
+    padding-right: 2%;
+}
+nav ul li {
+    display: inline;
+    font-size: 16px;
+}
+main {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+}
+header {
+    padding: 50px;
+}
+h2 {
+    font-size: 35px;
+}
+section {
+    padding: 30px;
+    background-color: darkgray;
+}
+section:nth-of-type(even) {
+    background-color: lightgrey;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+label {
+    text-align: left;
+}
+input {
+    padding: 5px;
+    width: 100%;
+}
+
+.projectScreencap {
+    padding: 15px;
+    border: 1px black solid;
+}
+
+.submitButton {
+    margin-top: 10px;
+}
+
+.contactMessage {
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+}
+
+
+
+ 
