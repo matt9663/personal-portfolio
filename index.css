@@ -1,43 +1,98 @@
 * {
     box-sizing: border-box;
-    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 nav {
+    background-color: #B3252F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    text-transform: uppercase;
+    height: 5vh;
     padding: 2%;
-    background-color: grey;
 }
 nav ul {
     text-align: right;
-    padding-right: 2%;
 }
 nav ul li {
     display: inline;
     font-size: 16px;
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+    color:lightyellow;
+}
+a:hover {
+    color: #2B93CC;
 }
 main {
     text-align: center;
     font-size: 20px;
     line-height: 1.7;
+    font-family: 'Work Sans', sans-serif;
 }
 header {
     padding: 50px;
+    font-family: 'Space Mono', monospace;
+    color: lightyellow;
+    height: 95vh;
+    background-image: linear-gradient(0deg,rgba(255, 79, 91, .7),rgba(255, 79, 91, .9)),url("https://user-images.githubusercontent.com/51541006/62636608-5e653700-b929-11e9-8b6a-0272d19a8019.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 h2 {
     font-size: 35px;
+    font-family: 'Space Mono', monospace;
+    overflow: hidden;
 }
+h2:before,
+h2:after {
+    background-color: lightyellow;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+h2:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
 section {
     padding: 30px;
-    background-color: darkgray;
+    background-color: rgba(255, 79, 91, .9);
+    color: lightyellow;
 }
-section:nth-of-type(even) {
-    background-color: lightgrey;
+.biography {
+    text-align: left;
+    padding-top: 3%;
 }
 
+section h3 {
+    padding: 20px; 
+}
+img {
+    width: 100%;
+}
 fieldset {
     display: flex;
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border: 2px solid lightyellow;
 }
 label {
     text-align: left;
@@ -54,14 +109,63 @@ input {
 
 .submitButton {
     margin-top: 10px;
+    font-size: 20px;
+    background-color: #2B93CC;
+    color: lightyellow;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #2B93CC; 
 }
+.submitButton:hover {
+    cursor: pointer;
+    background-color: #2E84B3;
+    color: #FFFB69;
+}
+.contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.socialIcon {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 .contactMessage {
     padding: 5px;
     height: 100px;
     width: 100%;
 }
-
-
+.projectInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+.projectInfo p {
+    text-align: left;
+    width: 75%;
+}
+button {
+    width: 25%;
+    padding: 10px;
+    background-color: #2B93CC;
+    color: lightyellow;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #2B93CC; 
+}
+button:hover {
+    cursor: pointer;
+    background-color: #2E84B3;
+    color: #FFFB69;
+}
 
  
