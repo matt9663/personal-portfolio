@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 nav {
     background-color: #B3252F;
@@ -11,6 +12,10 @@ nav {
     text-transform: uppercase;
     height: 5vh;
     padding: 2%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 nav ul {
     text-align: right;
@@ -23,6 +28,7 @@ nav ul li {
 a {
     text-decoration: none;
     color:lightyellow;
+    transition-duration: .3s;
 }
 a:hover {
     color: #2B93CC;
@@ -38,13 +44,19 @@ header {
     font-family: 'Space Mono', monospace;
     color: lightyellow;
     height: 95vh;
-    background-image: linear-gradient(0deg,rgba(255, 79, 91, .7),rgba(255, 79, 91, .9)),url("https://user-images.githubusercontent.com/51541006/62636608-5e653700-b929-11e9-8b6a-0272d19a8019.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/62636608-5e653700-b929-11e9-8b6a-0272d19a8019.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
+}
+h1 {
+    font-size: 55px;
+}
+header h3 {
+    font-size: 22px;
 }
 h2 {
     font-size: 35px;
@@ -74,14 +86,15 @@ section {
     background-color: rgba(255, 79, 91, .9);
     color: lightyellow;
 }
+section h3 {
+    text-align: left;
+    padding: 25px 0px;
+}
 .biography {
     text-align: left;
     padding-top: 3%;
 }
 
-section h3 {
-    padding: 20px; 
-}
 img {
     width: 100%;
 }
@@ -90,9 +103,9 @@ fieldset {
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 4%;
+    padding-top: 2%;
     padding-bottom: 4%;
-    border: 2px solid lightyellow;
+    border: 0px;
 }
 label {
     text-align: left;
@@ -108,18 +121,28 @@ input {
 }
 
 .submitButton {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 20px;
+    font-size: 24px;
     background-color: #2B93CC;
     color: lightyellow;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #2B93CC; 
+    text-transform: uppercase;
+    height: 50px;
+    transition-duration: .2s;
 }
 .submitButton:hover {
     cursor: pointer;
     background-color: #2E84B3;
     color: #FFFB69;
+    transform: scale(1.01)
+}
+
+.submitButton:active {
+    color: #2E84B3;
+    background-color: #FFFB69;
+    border: 1px solid #FFFB69;
 }
 .contactLinks {
     display: flex;
@@ -128,12 +151,16 @@ input {
 
 }
 .socialIcon {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition-duration: .5s;
 }
 
+.socialIcon:hover {
+    transform: scale(1.2)
+}
 
 .contactMessage {
     padding: 5px;
@@ -146,10 +173,12 @@ input {
     width: 100%;
     text-align: left;
 }
-.projectInfo p {
+.projectText{
     text-align: left;
-    width: 75%;
+    padding: 1% 3%;
+    list-style-type: square;
 }
+
 button {
     width: 25%;
     padding: 10px;
@@ -161,11 +190,44 @@ button {
     margin-right: 10px;
     border-radius: 3px;
     border: 1px solid #2B93CC; 
+    transition-duration: .2s;
 }
 button:hover {
     cursor: pointer;
     background-color: #2E84B3;
     color: #FFFB69;
+    transform: scale(1.05)
+}
+button:active {
+    color: #2E84B3;
+    background-color: #FFFB69;
+    border: 1px solid #FFFB69;
 }
 
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 75px;
+    }
+    header h3 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+    .biography {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 22px;
+        line-height: 1.9;
+    }
+    .projectText {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    section h3 {
+        font-size: 34px;
+    }
+}
  
