@@ -44,7 +44,7 @@ header {
     font-family: 'Space Mono', monospace;
     color: lightyellow;
     height: 95vh;
-    background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/62636608-5e653700-b929-11e9-8b6a-0272d19a8019.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/73570573-819a1a80-4464-11ea-9a2e-5d39ccb95bdf.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,10 +93,14 @@ section h3 {
 .biography {
     text-align: left;
     padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 img {
+
     width: 100%;
+    max-width: 1500px
 }
 fieldset {
     display: flex;
@@ -111,8 +115,13 @@ label {
     text-align: left;
 }
 input {
-    padding: 5px;
+  font-family: 'Space Mono';
+    padding: 1%;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 255, 234);
     width: 100%;
+    font-size: 20px;
 }
 
 .projectScreencap {
@@ -166,6 +175,10 @@ input {
     padding: 5px;
     height: 100px;
     width: 100%;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 234);
+    font-family: 'Space Mono';
+    border: none;
 }
 .projectInfo {
     display: flex;
