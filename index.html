@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono|Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,900&family=Lato:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/540d7da857.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
@@ -19,50 +20,72 @@
         </ul>
     </nav>
     <main role="main">
-        <header role="heroSection">
-            <h1>Greetings!</h1>
-            <h3>My name is Matt. Let's build something together</h3>
+        <header class='hero-section' role="heroSection">
+            <h1>Matt Wood</h1>
+            <h3>Web Developer</h3>
         </header>
         <section role="bio" id="bio">
             <h2>Bio</h2>
-            <p class="biography">I am an aspiring web developer currently working my way through the Front End Web Development bootcamp at Thinkful. Coding is a source of great joy for me. I love having problems to solve and developing creative solutions to those problems in the pursuit of efficiency. Few things give me as deep a feeling of satisfaction as starting from nothing and crafting an elegant and accessible app.<br><br>
-
-                I am coming to coding from a background in e-Commerce, where I was able to experience firsthand how critical intelligent design is to the success of a website.  I want to leverage this passion for UI/UX optimization to make tools that improve the Web experience for everyone and bring fully realized ideas to people that will benefit their lives.<br><br>
-                
-                Beyond coding, my hobbies include music (performing, attending, listening), cooking, watching Bob’s Burgers, and hanging out with my tripod dog Pawlie. <br>
-                </p>
+            <p class="biography">I am a full stack web developer based in Richmond, VA. 
+              I love developing creative solutions to problems in the pursuit of efficiency.
+              <br>
+              <br>
+              I came to coding from a background in e-Commerce, where I was able to experience firsthand how critical intelligent design is to the success of a website.  
+              My constant goal is to leverage this passion for UI/UX optimization to make tools that improve the Web experience for all.
+              <br>
+              <br>
+              If I'm not coding, I'm probably playing music, cooking, drinking coffee, or hanging out with my dog Pawlie. 
+              <br>
+              </p>
         </section>
         <section role="projects" id="projects">
             <h2>Projects</h2>
-            <h3>Fitscribe Workout Tracker</h3>
-            <img src="https://user-images.githubusercontent.com/51541006/73572992-20754580-446a-11ea-8ca0-aa76aacd163a.png" alt="Fitscribe Screenshot">
-            <div class="projectInfo"></div>
-            <ul class="projectText">
-                <li>Workout Builder/Planner app</li>
-                <li>Tech used: React, NodeJs/Express, PostgreSQL, HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i></li>
-            </ul>
-            <a href="https://fitscribe-app.now.sh/" target="_blank"><button type="button">Live Site</button></a>
-            <a href="https://github.com/matt9663/fitscribe-app" target="_blank"><button type="button">Client Repo</button></a>
-            <a href="https://github.com/matt9663/fitscribe-server" target="_blank"><button type="button">Server Repo</button></a>
-            <h3>Learn To Play Guitar App</h3>
-            <img src="https://user-images.githubusercontent.com/51541006/64447564-36edbf80-d0cb-11e9-9f86-e22358744e54.png" alt="Learn Guitar App Screenshot">
-            <div class="projectInfo"></div>
-            <ul class="projectText">
-                <li>This app aggregates materials from around the web to help users learn songs on the guitar. It pulls lyrics, a reference video, and tablature</li>
-                <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
-            </ul>
-            <a href="https://matt9663.github.io/learn-to-play/" target="_blank"><button type="button">Live Site</button></a>
-            <a href="https://github.com/matt9663/learn-to-play" target="_blank"><button type="button">Github</button></a>
+            <div class='project-card-grid'>
+              <div class='project-card'>
+                <div class="projectInfo">
+                  <h3>Fitscribe Workout Tracker</h3>
+                  <ul class="projectText">
+                      <li>Workout Builder/Planner app</li>
+                      <li>Tech used: React, NodeJs/Express, PostgreSQL, HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i></li>
+                  </ul>
+                  <div class='project-buttons'>
+                    <a href="https://fitscribe-app.now.sh/" target="_blank"><button type="button">Live Site</button></a>
+                    <a href="https://github.com/matt9663/fitscribe-app" target="_blank"><button type="button">Client Repo</button></a>
+                    <a href="https://github.com/matt9663/fitscribe-server" target="_blank"><button type="button">Server Repo</button></a>
+                  </div>
+                </div>
+                <img src="https://user-images.githubusercontent.com/51541006/73572992-20754580-446a-11ea-8ca0-aa76aacd163a.png" alt="Fitscribe Screenshot">
+              </div>
+              <div class='project-card'>          
+                <div class="projectInfo">
+                  <h3>Learn To Play Guitar App</h3>
+                  <ul class="projectText">
+                    <li>This app aggregates materials from around the web to help users learn songs on the guitar. It pulls lyrics, a reference video, and tablature</li>
+                    <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
+                  </ul>
+                  <div class="project-buttons">
+                    <a href="https://matt9663.github.io/learn-to-play/" target="_blank"><button type="button">Live Site</button></a>
+                    <a href="https://github.com/matt9663/learn-to-play" target="_blank"><button type="button">Github</button></a>
+                  </div>
+                </div>
+                <img src="https://user-images.githubusercontent.com/51541006/64447564-36edbf80-d0cb-11e9-9f86-e22358744e54.png" alt="Learn Guitar App Screenshot">
+                </div>
+              </div>    
+              <div class="project-card">
+                <div class="projectInfo">
+                <h3>Beatles Trivia App</h3>
+                <ul class="projectText">
+                    <li>Quiz app that tests the depths of the user’s obscure knowledge on the Fab Four.</li>
+                    <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
+                </ul>
+                <div class="project-buttons">
+                  <a href="https://matt9663.github.io/quiz-app/index.html" target="_blank"><button type="button">Live Site</button></a>
+                  <a href="https://github.com/matt9663/quiz-app" target="_blank"><button type="button">Github</button></a>
+                </div>
+              </div>
+              <img src="https://user-images.githubusercontent.com/51541006/62650492-86af5e80-b946-11e9-989f-920f3d682b69.PNG" alt="Beatles Quiz App Screenshot">
+              </div>
             </div>
-            <h3>The Ultimate Beatles Trivia App</h3>
-            <img src="https://user-images.githubusercontent.com/51541006/62650492-86af5e80-b946-11e9-989f-920f3d682b69.PNG" alt="Beatles Quiz App Screenshot">
-            <div class="projectInfo"></div>
-            <ul class="projectText">
-                <li>This is a basic quiz app that tests the depths of the user’s obscure knowledge on the Fab Four.</li>
-                <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
-            </ul>
-            <a href="https://matt9663.github.io/quiz-app/index.html" target="_blank"><button type="button">Live Site</button></a>
-            <a href="https://github.com/matt9663/quiz-app" target="_blank"><button type="button">Github</button></a>
         </section>
         <section role="contact" id="contact">
             <h2>Contact</h2>

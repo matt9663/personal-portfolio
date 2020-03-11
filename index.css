@@ -5,48 +5,70 @@
     scroll-behavior: smooth;
 }
 nav {
-    background-color: #B3252F;
-    font-family: 'Roboto', sans-serif;
+    background-color: rgb(126, 85, 111);
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    color: whitesmoke;
+    color: #F9F7F6;
     text-transform: uppercase;
     height: 5vh;
     padding: 2%;
     display: flex; 
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    letter-spacing: .3rem;
 }
-nav ul {
-    text-align: right;
+.navigation {
+    text-align: center;
+    width: 100%
 }
-nav ul li {
-    display: inline;
-    font-size: 16px;
-    margin-left: 15px;
+.navigation > li {
+  text-align: center;
+  display: inline;
+  font-size: 16px;
+  margin: 0 2%;
 }
-a {
+li > a {
     text-decoration: none;
-    color:lightyellow;
+    color:#F9F7F6;
     transition-duration: .3s;
+    position: relative;
 }
-a:hover {
-    color: #2B93CC;
+
+li > a:before {
+  content: '';
+  position: absolute;
+  width: 99%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F9F7F6;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
+
+li > a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
 main {
     text-align: center;
     font-size: 20px;
     line-height: 1.7;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
 header {
     padding: 50px;
-    font-family: 'Space Mono', monospace;
-    color: lightyellow;
-    height: 95vh;
+    font-family: 'Alegreya SC', serif;
+    color: #F9F7F6;
+    height: 65vh;
     background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/73570573-819a1a80-4464-11ea-9a2e-5d39ccb95bdf.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,18 +76,20 @@ header {
 }
 h1 {
     font-size: 55px;
+    text-shadow: 0px 2px 4px rgba(0,0,0, .34);
 }
 header h3 {
     font-size: 22px;
+    text-shadow: 0px 2px 4px rgba(0,0,0, .34);
 }
 h2 {
     font-size: 35px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Oswald', sans-serif;
     overflow: hidden;
 }
 h2:before,
 h2:after {
-    background-color: lightyellow;
+    background-color: #41474E;
     content: "";
     display: inline-block;
     height: 3px;
@@ -83,24 +107,37 @@ h2:after {
    }
 section {
     padding: 30px;
-    background-color: rgba(255, 79, 91, .9);
-    color: lightyellow;
+    background-color: #CFBDB4;
+    color: #41474E;
 }
 section h3 {
     text-align: left;
-    padding: 25px 0px;
+    padding: 3% 0;
+    font-weight: 800;
+    font-size: 2rem;
 }
 .biography {
     text-align: left;
     padding-top: 3%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-img {
+.project-card {
+  background-color: #F9F7F6;
+  padding: 2%;
+  margin: 4% auto;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0,0,0, .34);
+  overflow: hidden;
+}
 
+
+img {
     width: 100%;
-    max-width: 1500px
 }
 fieldset {
     display: flex;
@@ -115,44 +152,35 @@ label {
     text-align: left;
 }
 input {
-  font-family: 'Space Mono';
+    font-family: 'Oswald', sans-serif;
     padding: 1%;
     border-radius: 3px;
     border: none;
-    background-color: rgb(255, 255, 234);
+    background-color: #F9F7F6;
     width: 100%;
     font-size: 20px;
-}
-
-.projectScreencap {
-    padding: 15px;
-    border: 1px black solid;
 }
 
 .submitButton {
     margin-top: 20px;
     font-size: 24px;
-    background-color: #2B93CC;
+    background-color: #A36D90;
     color: lightyellow;
     margin-bottom: 10px;
     border-radius: 3px;
-    border: 1px solid #2B93CC; 
+    border: 0; 
     text-transform: uppercase;
-    height: 50px;
+    height: 65px;
     transition-duration: .2s;
 }
 .submitButton:hover {
     cursor: pointer;
-    background-color: #2E84B3;
+    background-color: rgb(126, 85, 111);
     color: #FFFB69;
     transform: scale(1.01)
 }
 
-.submitButton:active {
-    color: #2E84B3;
-    background-color: #FFFB69;
-    border: 1px solid #FFFB69;
-}
+
 .contactLinks {
     display: flex;
     flex-direction: row;
@@ -176,40 +204,53 @@ input {
     height: 100px;
     width: 100%;
     border-radius: 3px;
-    background-color: rgb(255, 255, 234);
-    font-family: 'Space Mono';
+    background-color: #F9F7F6;
+    font-family: 'Oswald', sans-serif;
     border: none;
 }
 .projectInfo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    text-align: left;
+    text-align: center;
+    align-items: center;
 }
 .projectText{
     text-align: left;
-    padding: 1% 3%;
+    padding: 1% 0;
     list-style-type: square;
+    font-weight: 400;
+    width:100%;
+    padding-inline-start: 1.5rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.project-buttons > a {
+  width: 30%;
 }
 
 button {
-    width: 25%;
+    width: 100%;
     padding: 10px;
-    background-color: #2B93CC;
+    background-color: #A36D90;
     color: lightyellow;
     font-size: 20px;
-    margin-top: 20px;
-    margin-left:10px;
-    margin-right: 10px;
-    border-radius: 3px;
-    border: 1px solid #2B93CC; 
+    border-radius: 3px; 
+    border: 0px;
     transition-duration: .2s;
+    font-family: 'Oswald', sans-serif;
 }
 button:hover {
     cursor: pointer;
-    background-color: #2E84B3;
+    background-color: rgb(126, 85, 111);
     color: #FFFB69;
-    transform: scale(1.05)
+    transform: scale(1.03)
 }
 button:active {
     color: #2E84B3;
@@ -228,8 +269,8 @@ button:active {
 
 @media only screen and (min-width: 1250px) {
     .biography {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
         font-size: 22px;
         line-height: 1.9;
     }
@@ -243,4 +284,32 @@ button:active {
         font-size: 34px;
     }
 }
+
+@media only screen and (min-width: 800px) {
+  .project-card {
+    width: 70%
+  }
+}
  
+
+@media only screen and (min-width: 550) {
+  .project-card {
+    width: 85%;
+    margin-bottom: 3%;
+  }
+  .navigation > li {
+    font-size: 20px;
+  }
+}
+ 
+@media only screen and (max-width: 450px) {
+  button {
+    font-size: 12px;
+  }
+  section h3 {
+    font-size: 20px;
+  }
+  .projectText {
+    font-size: 16px;
+}
+}
