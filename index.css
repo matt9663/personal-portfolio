@@ -86,6 +86,7 @@ h2 {
     font-size: 35px;
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
+    max-height: 60px;
 }
 h2:before,
 h2:after {
@@ -168,8 +169,8 @@ input {
 .submitButton {
     margin-top: 20px;
     font-size: 24px;
-    background-color: #A36D90;
-    color: lightyellow;
+    color: #A36D90;
+    background-color: lightyellow;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 0; 
@@ -179,8 +180,6 @@ input {
 }
 .submitButton:hover {
     cursor: pointer;
-    background-color: rgb(126, 85, 111);
-    color: #FFFB69;
     transform: scale(1.01)
 }
 
@@ -267,6 +266,22 @@ button:active {
     color: #2E84B3;
     background-color: #FFFB69;
     border: 1px solid #FFFB69;
+}
+
+.contact-section {
+  background-color: rgb(126, 85, 111);
+  color: lightyellow
+}
+
+.contact-section > h2:before,
+.contact-section > h2:after {
+    background-color: lightyellow;
+    content: "";
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
 }
 
 @media only screen and (min-width: 700px) {
