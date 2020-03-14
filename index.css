@@ -178,6 +178,7 @@ input {
     height: 65px;
     transition-duration: .2s;
 }
+
 .submitButton:hover {
     cursor: pointer;
     transform: scale(1.01)
