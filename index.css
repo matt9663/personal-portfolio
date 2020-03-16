@@ -66,7 +66,7 @@ header {
     font-family: 'Alegreya SC', serif;
     color: #F9F7F6;
     height: 65vh;
-    background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/73570573-819a1a80-4464-11ea-9a2e-5d39ccb95bdf.jpg");
+    background-image: linear-gradient(0deg,rgba(0,0,0, .5),rgba(0,0,0, .7)),url("https://user-images.githubusercontent.com/51541006/76804076-4dd84180-67d3-11ea-8f4f-c05da29d47e4.jpg");
     background-size: cover;
     background-position: top;
     display: flex;
@@ -181,7 +181,8 @@ input {
 
 .submitButton:hover {
     cursor: pointer;
-    transform: scale(1.01)
+    transform: scale(1.01);
+    background-color: rgb(235, 235, 190)
 }
 
 
@@ -246,27 +247,29 @@ input {
   margin: 0 auto;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #A36D90;
-    color: lightyellow;
-    font-size: 20px;
-    border-radius: 3px; 
-    border: 0px;
-    transition-duration: .2s;
-    font-family: 'Oswald', sans-serif;
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #A36D90;
+  color: lightyellow;
+  font-size: 20px;
+  border-radius: 3px; 
+  border: 0px;
+  transition-duration: .2s;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
 }
-button:hover {
-    cursor: pointer;
-    background-color: rgb(126, 85, 111);
-    color: #FFFB69;
-    transform: scale(1.03)
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(126, 85, 111);
+  color: #FFFB69;
+  transform: scale(1.03)
 }
-button:active {
-    color: #2E84B3;
-    background-color: #FFFB69;
-    border: 1px solid #FFFB69;
+.button:active {
+  color: #2E84B3;
+  background-color: #FFFB69;
+  border: 1px solid #FFFB69;
 }
 
 .contact-section {
@@ -339,7 +342,7 @@ button:active {
 }
  
 @media only screen and (max-width: 450px) {
-  button {
+  .button {
     font-size: 12px;
   }
   section h3 {

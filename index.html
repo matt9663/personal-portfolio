@@ -6,26 +6,25 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Space+Mono|Work+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@1,900&family=Lato:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/540d7da857.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
 <body>
-    <nav role="navBar">
+    <nav role="navigation">
         <ul class="navigation">
             <li><a href="#bio">Bio</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <main role="main">
-        <header class='hero-section' role="heroSection">
+    <main>
+        <header class='hero-section' role="banner">
             <h1>Matt Wood</h1>
             <h3>Web Developer</h3>
         </header>
-        <section role="bio" id="bio">
+        <section id="bio">
             <h2>Bio</h2>
             <p class="biography">I am a full stack web developer based in Richmond, VA. 
               I love developing creative solutions to problems in the pursuit of efficiency.
@@ -40,7 +39,7 @@
               <br>
               </p>
         </section>
-        <section role="projects" id="projects">
+        <section id="projects">
             <h2>Projects</h2>
             <div class='project-card-grid'>
               <div class='project-card'>
@@ -52,9 +51,9 @@
                       <li>Tech used: React, NodeJs/Express, PostgreSQL, HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i></li>
                   </ul>
                   <div class='project-buttons'>
-                    <a href="https://jamfinder-app.now.sh/" target="_blank"><button type="button">Live Site</button></a>
-                    <a href="https://github.com/matt9663/jamfinder-client-app" target="_blank"><button type="button">Client Repo</button></a>
-                    <a href="https://github.com/matt9663/jamfinder-server-api" target="_blank"><button type="button">Server Repo</button></a>
+                    <a href="https://jamfinder-app.now.sh/" target="_blank" class='button'>Live Site</a>
+                    <a href="https://github.com/matt9663/jamfinder-client-app" target="_blank" class='button'>Client Repo</a>
+                    <a href="https://github.com/matt9663/jamfinder-server-api" target="_blank" class='button'>Server Repo</a>
                   </div>
                 </div>
                 <img src="https://user-images.githubusercontent.com/51541006/76690579-644a9580-6639-11ea-8c7d-7b1ea5bf13ef.png" alt="JamFinder Screenshot">
@@ -67,9 +66,9 @@
                       <li>Tech used: React, NodeJs/Express, PostgreSQL, HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i></li>
                   </ul>
                   <div class='project-buttons'>
-                    <a href="https://fitscribe-app.now.sh/" target="_blank"><button type="button">Live Site</button></a>
-                    <a href="https://github.com/matt9663/fitscribe-app" target="_blank"><button type="button">Client Repo</button></a>
-                    <a href="https://github.com/matt9663/fitscribe-server" target="_blank"><button type="button">Server Repo</button></a>
+                    <a href="https://fitscribe-app.now.sh/" target="_blank" class='button'>Live Site</a>
+                    <a href="https://github.com/matt9663/fitscribe-app" target="_blank" class='button'>Client Repo</a>
+                    <a href="https://github.com/matt9663/fitscribe-server" target="_blank" class='button'>Server Repo</a>
                   </div>
                 </div>
                 <img src="https://user-images.githubusercontent.com/51541006/73572992-20754580-446a-11ea-8ca0-aa76aacd163a.png" alt="Fitscribe Screenshot">
@@ -82,8 +81,8 @@
                     <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
                   </ul>
                   <div class="project-buttons">
-                    <a href="https://matt9663.github.io/learn-to-play/" target="_blank"><button type="button">Live Site</button></a>
-                    <a href="https://github.com/matt9663/learn-to-play" target="_blank"><button type="button">Github</button></a>
+                    <a href="https://matt9663.github.io/learn-to-play/" target="_blank" class='button'>Live Site</a>
+                    <a href="https://github.com/matt9663/learn-to-play" target="_blank" class='button'>Github</a>
                   </div>
                 </div>
                 <img src="https://user-images.githubusercontent.com/51541006/64447564-36edbf80-d0cb-11e9-9f86-e22358744e54.png" alt="Learn Guitar App Screenshot">
@@ -97,25 +96,24 @@
                     <li>Tech used: HTML <i class="fab fa-html5"></i>, CSS <i class="fab fa-css3-alt"></i>, Javascript <i class="fab fa-js-square"></i>, jQuery</li>
                 </ul>
                 <div class="project-buttons">
-                  <a href="https://matt9663.github.io/quiz-app/index.html" target="_blank"><button type="button">Live Site</button></a>
-                  <a href="https://github.com/matt9663/quiz-app" target="_blank"><button type="button">Github</button></a>
+                  <a href="https://matt9663.github.io/quiz-app/index.html" target="_blank" class='button'>Live Site</a>
+                  <a href="https://github.com/matt9663/quiz-app" target="_blank" class='button'>Github</a>
                 </div>
               </div>
               <img src="https://user-images.githubusercontent.com/51541006/62650492-86af5e80-b946-11e9-989f-920f3d682b69.PNG" alt="Beatles Quiz App Screenshot">
               </div>
-            </div>
         </section>
-        <section class='contact-section' role="contact" id="contact">
+        <section class='contact-section' id="contact">
             <h2>Contact</h2>
             <div class="contactLinks">
                 <a href="https://www.linkedin.com/in/matthew-wood-426a7652/" target="_blank"><img class="socialIcon" src="https://user-images.githubusercontent.com/51541006/62636616-5f966400-b929-11e9-95c0-003f98f5bbc8.png" alt="Linkedin Profile"></a>
-                <a href="https://github.com/matt9663" target="_blank"><img class="socialIcon"src="https://user-images.githubusercontent.com/51541006/76690918-e8524c80-663c-11ea-8bd9-afb1afd88939.png" alt="Github Icon"></a>
+                <a href="https://github.com/matt9663" target="_blank"><img class="socialIcon" src="https://user-images.githubusercontent.com/51541006/76690918-e8524c80-663c-11ea-8bd9-afb1afd88939.png" alt="Github Icon"></a>
             </div>
-            <form class='submit-form' action="mailto:matt9663@gmail.com" method="post" enctype="text/plain"> 
+            <form role='form' class='submit-form' action="mailto:matt9663@gmail.com" method="post" enctype="text/plain"> 
                 <fieldset>
                     <label for="name">Name:</label>
                     <input type="text" id="name" placeholder="Name">
-                    <label for="emailAddress">Email Address:</label>
+                    <label for="email">Email Address:</label>
                     <input type="text" id="email" placeholder="Email Address">
                     <label for="message">Message:</label>
                     <textarea class="contactMessage" id="message" placeholder="Write me a message!"></textarea>
