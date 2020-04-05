@@ -288,6 +288,17 @@ input {
     width: 50%;
 }
 
+.slide-in {
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: ease-in .3s;
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
 @media only screen and (min-width: 700px) {
     h1 {
         font-size: 75px;
@@ -318,9 +329,9 @@ input {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 850px) {
   .project-card {
-    width: 50%
+    width: 60%
   }
   .submit-form {
     width: 70%
@@ -330,7 +341,7 @@ input {
 
 @media only screen and (min-width: 550) {
   .project-card {
-    width: 85%;
+    width: 90%;
     margin-bottom: 3%;
   }
   .navigation > li {
